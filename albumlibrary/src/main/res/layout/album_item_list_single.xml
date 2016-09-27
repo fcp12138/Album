@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fcp.albumlibrary.layout.SquareLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/single_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_album_default_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</com.fcp.albumlibrary.layout.SquareLayout>

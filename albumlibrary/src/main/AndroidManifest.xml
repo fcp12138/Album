@@ -1,0 +1,26 @@
+<manifest package="com.fcp.albumlibrary"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".activity.AlbumActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".activity.BrowseActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.fcp.browse.BrowseDeleteActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Theme.AppCompat.NoActionBar"/>
+    </application>
+
+</manifest>

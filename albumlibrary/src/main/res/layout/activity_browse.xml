@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_app_browse_photo_id"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--tool bar-->
+    <RelativeLayout
+        android:id="@+id/browse_toolbar"
+        android:background="#55111111"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height">
+
+        <ImageButton
+            android:id="@+id/browse_tool_left_btn"
+            android:src="@drawable/ic_actionbar_toolbar_left"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/browse_tool_right_btn"
+            android:text="完成"
+            android:background="@drawable/selector_album_action_btn"
+            android:minWidth="80dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/browse_indicator"
+            android:layout_toRightOf="@id/browse_tool_left_btn"
+            android:layout_toLeftOf="@id/browse_tool_right_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/browse_bottom_bar"
+        android:background="#55111111"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/browse_bottom_bar_height">
+
+        <LinearLayout
+            android:id="@+id/browse_bottom_check_layout"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/browse_bottom_bar_check_mark"
+                android:layout_marginRight="5dp"
+                android:clickable="false"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_album_btn_unselected"/>
+
+            <TextView
+                android:text="选择"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

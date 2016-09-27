@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="15dp"
+                    android:color="@android:color/transparent"/>
+            <corners android:radius="2dp" />
+            <solid android:color="@color/album_passed_color" />
+            <padding android:left="15dp"
+                     android:right="15dp"/>
+        </shape>
+    </item>
+
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="15dp"
+                    android:color="@android:color/transparent"/>
+            <corners android:radius="2dp" />
+            <solid android:color="@color/album_action_color" />
+            <padding android:left="15dp"
+                     android:right="15dp"/>
+        </shape>
+    </item>
+
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="15dp"
+                    android:color="@android:color/transparent"/>
+            <corners android:radius="2dp" />
+            <solid android:color="@color/album_un_enable_color" />
+            <padding android:left="15dp"
+                     android:right="15dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="15dp"
+                    android:color="@android:color/transparent"/>
+            <corners android:radius="2dp" />
+            <solid android:color="@color/album_action_color" />
+            <padding android:left="15dp"
+                     android:right="15dp"/>
+        </shape>
+    </item>
+
+</selector>
