@@ -1,4 +1,4 @@
-package com.fcp.browse;
+package com.fcp.browse.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,6 +7,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.fcp.albumlibrary.R;
+import com.fcp.browse.model.Picture;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -185,6 +186,7 @@ public class PictureSelectView<T extends Picture> extends FlowLayout implements 
                 }else{
                     mOnPictureSelectClick.clickNormalItem(i);
                 }
+                break;
             }
         }
     }

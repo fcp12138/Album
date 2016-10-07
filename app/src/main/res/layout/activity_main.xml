@@ -6,9 +6,17 @@
     android:layout_height="match_parent"
     tools:context="com.fcp.album.MainActivity">
 
-    <com.fcp.browse.PictureSelectView
+    <com.fcp.browse.view.PictureSelectView
         android:id="@+id/picture_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="onClickBtn"
+        android:padding="10dp"
+        android:text="确定"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

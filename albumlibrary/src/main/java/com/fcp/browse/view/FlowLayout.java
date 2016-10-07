@@ -1,4 +1,4 @@
-package com.fcp.browse;
+package com.fcp.browse.view;
 
 /*
  * Copyright 2013 Blaz Solar

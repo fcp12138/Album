@@ -1,4 +1,4 @@
-package com.fcp.browse;
+package com.fcp.browse.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,6 +7,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.fcp.albumlibrary.R;
+import com.fcp.browse.model.Picture;
 
 import java.util.ArrayList;
 
@@ -14,7 +15,7 @@ import java.util.ArrayList;
  * 图片展示显示控件
  * Created by fcp on 2015/12/12.
  */
-public class PictureDisplayView< T extends Picture> extends FlowLayout implements View.OnClickListener{
+public class PictureDisplayView<T extends Picture> extends FlowLayout implements View.OnClickListener{
 
     private Context mContext;
     /**
@@ -105,6 +106,9 @@ public class PictureDisplayView< T extends Picture> extends FlowLayout implement
     private OnPictureDisplayClick mOnPictureDisplayClick;
 
     public void setOnPictureDisplayClick(OnPictureDisplayClick onPictureDisplayClick) {
+        if(onPictureDisplayClick != null){
+            this.setClickable(true);
+        }
         mOnPictureDisplayClick = onPictureDisplayClick;
     }
 
@@ -114,6 +118,7 @@ public class PictureDisplayView< T extends Picture> extends FlowLayout implement
         for(int i=0 ;i< getChildCount();i++){
             if(getChildAt(i) == view){
                 mOnPictureDisplayClick.clickItem(i);
+                break;
             }
         }
     }

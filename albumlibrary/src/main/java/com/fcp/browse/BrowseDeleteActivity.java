@@ -16,6 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.fcp.albumlibrary.R;
+import com.fcp.browse.model.Picture;
 
 import java.util.ArrayList;
 

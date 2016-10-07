@@ -1,4 +1,4 @@
-package com.fcp.browse;
+package com.fcp.browse.model;
 
 import android.os.Parcel;
 

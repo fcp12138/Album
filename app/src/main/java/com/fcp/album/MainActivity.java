@@ -3,11 +3,12 @@ package com.fcp.album;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.fcp.albumlibrary.activity.AlbumActivity;
 import com.fcp.albumlibrary.bean.Image;
 import com.fcp.browse.BrowseDeleteActivity;
-import com.fcp.browse.PictureSelectView;
+import com.fcp.browse.view.PictureSelectView;
 
 import java.util.ArrayList;
 
@@ -54,5 +55,14 @@ public class MainActivity extends AppCompatActivity {
                 mSelectView.delete(integer);
             }
         }
+    }
+
+    /**
+     * 点击确定
+     */
+    public void onClickBtn(View view) {
+        Intent intent = new Intent(this,BrowsePhotoActivity.class);
+        intent.putExtra("data",mSelectView.getArrayList());
+        startActivity(intent);
     }
 }

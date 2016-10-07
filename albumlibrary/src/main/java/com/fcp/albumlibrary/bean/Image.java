@@ -3,7 +3,7 @@ package com.fcp.albumlibrary.bean;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.fcp.browse.Picture;
+import com.fcp.browse.model.Picture;
 
 /**
  * 图片实体

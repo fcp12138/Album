@@ -21,6 +21,9 @@
         <activity android:name="com.fcp.browse.BrowseDeleteActivity"
                   android:screenOrientation="portrait"
                   android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.fcp.browse.BrowseAnimActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Transparent"/>
     </application>
 
 </manifest>
